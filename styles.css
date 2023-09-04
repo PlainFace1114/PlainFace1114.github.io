@@ -19,10 +19,17 @@
 }
 
 .div2 {
-  padding: 10;
+  margin: 20 10 20 10;
+  padding: 10 10 10 10;
 }
 
 .div5 {
+  color: #007700;
+  position: center;
+}
+
+.div6 {
   color: pink;
+  text-align: left;
   position: center;
 }
