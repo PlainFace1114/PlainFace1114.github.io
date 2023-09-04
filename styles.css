@@ -18,6 +18,11 @@
   color: grey;
 }
 
+.div2 {
+  padding: 10;
+}
+
 .div5 {
   color: pink;
+  position: center;
 }
