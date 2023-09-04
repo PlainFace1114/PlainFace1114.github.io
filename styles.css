@@ -1,7 +1,7 @@
 .header {
   text-align: center;
   background-color: #18B718;
-  color: #007700;
+  color: #1e1786;
   padding: 32px;
 }
 
@@ -16,4 +16,8 @@
 
 .div2, .div3, .div4 {
   color: grey;
+}
+
+.div5 {
+  color: pink;
 }
