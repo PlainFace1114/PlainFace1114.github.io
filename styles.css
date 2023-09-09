@@ -1,35 +1,85 @@
-.header {
+body {
+  display: inline-block;
+  text-align: justify;
+  border-style: solid double;
+  border-top-width: 100;
+  border-width: 2.0rem;
+  border-color: #372118;
+  border-radius: 25%;
+}
+
+header {
+  display: block;
   text-align: center;
-  background-color: #18B718;
-  color: #1e1786;
+  font-weight: 100;
+  background-color: #9DA992;
+  color: #233116;
   padding: 32px;
+  border: double;
+  border-color: #283121;
+  border-width: 3.0rem;
 }
 
 .colors {
-  background-color: black;
+  background-color: #4D5645;
 }
 
 .test {
   text-align: center;
-  color: #007700;
+  color: #231024;
 }
 
 .div2, .div3, .div4 {
-  color: grey;
+  color: #231024;
+}
+
+.div1 {
+  border: mixed;
+
+  border-bottom: ridge;
+  border-bottom-color: #283121;
+  border-bottom-style: double;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  border-width: 5.0rem;
+
+  border-top: ridge;
+  border-top-color: #283121;
+  border-top-style: double;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-width: 5.0rem;
 }
 
 .div2 {
-  margin: 20 10 20 10;
-  padding: 10 10 10 10;
+  display: flex;
+  font-style: normal;
+  text-align: center;
+  margin: 25px 500px 25px 500px;
+  border: mixed;
+  border-left: solid;
+  border-right: solid;
+  border-bottom: dotted;
+  border-top: dotted;
+  border-color: #372118;
+  border-width: 1.0rem;
+}
+
+.div4 {
+  width: auto;
+  height: auto;
+  border: mixed;
+  border-bottom: dotted;
+  border-color: #372118;
+  border-width: 1.0rem;
 }
 
 .div5 {
-  color: #007700;
-  position: center;
+  color: #2E0300;
 }
 
 .div6 {
-  color: pink;
-  text-align: left;
-  position: center;
+  display: flex;
+  color: #231024;
+  justify-content: center;
 }
