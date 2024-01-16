@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Circle Portal</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #222;
+    }
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="portalCanvas"></canvas>
+
+  <script>
+    const canvas = document.getElementById('portalCanvas');
+    const ctx = canvas.getContext('2d');
+    
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const centerX = canvas.width / 2;
+    const centerY = canvas.height / 2;
+    const radius = 100;
+    const speed = 0.02;
+
+    function drawPortal(time) {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      const wavelength = Math.sin(time * speed) * 50 + 200;
+      const color = `hsl(${wavelength}, 70%, 50%)`;
+
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+      ctx.fillStyle = color;
+      ctx.fill();
+
+      requestAnimationFrame((newTime) => drawPortal(newTime));
+    }
+
+    drawPortal(0);
+  </script>
+</body>
+</html>

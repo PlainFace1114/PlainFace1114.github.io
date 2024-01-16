@@ -5,16 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>PlainFace1114</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="smoke.js"></script>
 </head>
 <body class="colors">
   <header class="header">
     <h1>Aperture Laboratories</h1>
   </header>
-  <div class="div1 test"><h2>My name is Alex.</h2></div>
-  <div class="div2 test"><p>I used a color generator to choose the website color. This text is between p and I am going to use as much space as possible for it. So pay no attentiont to the garbage I am about to spit out just to see what happens when I use too much. Maybe I should use a text generator for this, I think that might be easier. On the other hand it is not hard to think of random stuff to type since typing out words is longer than thinking them. Hopefully I used enough space by now if not then some sort of text or essay generator will have to be used.</p></div>
-  <div class="div3 test"><p>Pay no attention to the above paragraph it is fodder.</p></div>
+  <div class="div1 test"><h2>For science you monster</h2></div>
+  <div class="div2 test"><p>The cake is a lie!!!</p></div>
+  <div class="div3 test"><p>SPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACCCEEE!</p></div>
   <div class="div4 test"></div>
-  <div class="div5 test"><h2>Hobbies.</h2></div>
+  <div class="div5 test"></div>
   <div class="div6 test">
     <ul>
       <li>Music</li>
@@ -24,5 +25,14 @@
       <li>Chess</li>
       <li>Video Games</li> 
     </ul></div>
+    <script>
+      var canvas = document.getElementById('canvas')
+      var ctx = canvas.getContext('2d')
+      canvas.width = innerWidth
+      canvas.height = innerHeight
+      // smokemachine(context, [r,g,b])
+      var demo = smokemachine(ctx, [54, 16.8, 18.2])
+      demo.start()
+      </script>
 </body>
 </html>
