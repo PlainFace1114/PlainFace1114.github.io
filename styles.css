@@ -67,6 +67,7 @@ body {
   width: 325px;
   height: 475px;
   padding: 20px;
+  justify-content: right;
 }
 
 .div6 {
